@@ -42,7 +42,6 @@ function sliderSlideLeft(outerClassName, leftArrowID, itemCounterClass, itemClas
                 setTimeout('sliderChangeItems(' + f_item + ', ' + l_item + ', "' + outerClassName + '", "' + itemClass + '", "' + itemCounterClass + '", "' + ItemsCount + '", "left", "' + HideItemClass + '");', 250);
                 setTimeout('sliderHideBack(' + f_item + ', ' + l_item + ', "' + outerClassName + '", "' + itemClass + '", "' + itemCounterClass + '", "' + ItemsCount + '", "' + sliderLoaderBackgroundClass + '", "' + sliderLoaderFinishClass + '", "left", "' + HideItemClass + '");', 300);
                 setTimeout('sliderSwitchSide("' + outerClassName + '", "' + switchClass + '", "' + switchItemClass + '", "' + switchItemActClass + '", "' + switchItemCountClass + '", "' + switchResAct + '", "' + switchResInAct + '", "left", "' + HideItemClass + '");', 220);
-                setTimeout('sliderLinesReHeight();', 300);
             }
         }
 }
@@ -92,7 +91,6 @@ function sliderSlideRight(outerClassName, rightArrowID, itemCounterClass, itemCl
             setTimeout('sliderChangeItems(' + f_item + ', ' + l_item + ', "' + outerClassName + '", "' + itemClass + '", "' + itemCounterClass + '", "' + ItemsCount + '", "right", "' + HideItemClass + '");', 250);
             setTimeout('sliderHideBack(' + f_item + ', ' + l_item + ', "' + outerClassName + '", "' + itemClass + '", "' + itemCounterClass + '", "' + ItemsCount + '", "' + sliderLoaderBackgroundClass + '", "' + sliderLoaderFinishClass + '", "right", "' + HideItemClass + '");', 250);
             setTimeout('sliderSwitchSide("' + outerClassName + '", "' + switchClass + '", "' + switchItemClass + '", "' + switchItemActClass + '", "' + switchItemCountClass + '", "' + switchResAct + '", "' + switchResInAct + '", "right", "' + HideItemClass + '");', 220);
-            setTimeout('sliderLinesReHeight();', 300);
         }
     }
 }
@@ -145,7 +143,6 @@ function sliderSlideNum(NewNum, outerClassName, itemCounterClass, itemClass, sli
             setTimeout('sliderChangeItems(' + f_item + ', ' + l_item + ', "' + outerClassName + '", "' + itemClass + '", "' + itemCounterClass + '", "' + ItemsCount + '", ' + new_item + ', "' + HideItemClass + '");', 250);
             setTimeout('sliderHideBack(' + f_item + ', ' + l_item + ', "' + outerClassName + '", "' + itemClass + '", "' + itemCounterClass + '", "' + ItemsCount + '", "' + sliderLoaderBackgroundClass + '", "' + sliderLoaderFinishClass + '", ' + new_item + ', "' + HideItemClass + '");', 250);
             setTimeout('sliderSwitchSide("' + outerClassName + '", "' + switchClass + '", "' + switchItemClass + '", "' + switchItemActClass + '", "' + switchItemCountClass + '", "' + switchResAct + '", "' + switchResInAct + '", ' + NewNum + ', "' + HideItemClass + '");', 220);
-            setTimeout('sliderLinesReHeight();', 300);
         }
     }
 }
@@ -394,7 +391,3 @@ function sliderSwitchSide(outerClassName, switchClass, switchItemClass, switchIt
             break;
     }
 }
-
-$(document).ready(function(){
-    sliderLinesReHeight();
-});
