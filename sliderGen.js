@@ -63,7 +63,6 @@ function sliderSlideRight(outerClassName, rightArrowID, itemCounterClass, itemCl
     //    4)подменяем отображаемые элементы новыми элементами
     if(ajaxMode == 1)
     {
-
     }
     else
     {
