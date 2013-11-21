@@ -79,7 +79,6 @@ function sliderSlideRight(outerClassName, rightArrowID, itemCounterClass, itemCl
 
         l_item = parseInt(f_item) + parseInt(ItemsCount);
 
-
         //проверяем - есть ли элементы для обновления
         var work = sliderCheckSlide(f_item, outerClassName, itemClass, itemCounterClass, ItemsCount, "right", HideItemClass);
 
